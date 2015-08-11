@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="7jn-cs-Usf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Introduce View Controller-->
+        <scene sceneID="gAL-2u-uhi">
+            <objects>
+                <viewController id="7jn-cs-Usf" customClass="ZOPIntroduceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nQV-2d-6gE"/>
+                        <viewControllerLayoutGuide type="bottom" id="PKq-WH-mhi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yST-g0-Xr0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8v-Fd-ahx">
+                                <rect key="frame" x="197" y="319" width="162" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zerone零一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0l-yB-RXk">
+                                <rect key="frame" x="197" y="266" width="162" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VFA-s3-koL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.36111494999999999" blue="0.41324401259999999" alpha="0.44" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="u0l-yB-RXk" firstAttribute="leading" secondItem="X8v-Fd-ahx" secondAttribute="leading" id="EON-A3-QZf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X8v-Fd-ahx" secondAttribute="trailing" id="M8d-w6-MI1"/>
+                            <constraint firstItem="X8v-Fd-ahx" firstAttribute="top" secondItem="u0l-yB-RXk" secondAttribute="bottom" constant="8" id="RZU-lo-VJj"/>
+                            <constraint firstItem="u0l-yB-RXk" firstAttribute="trailing" secondItem="X8v-Fd-ahx" secondAttribute="trailing" id="jKO-ch-IPy"/>
+                            <constraint firstAttribute="centerY" secondItem="X8v-Fd-ahx" secondAttribute="centerY" id="uAl-Vu-a6O"/>
+                            <constraint firstItem="X8v-Fd-ahx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yST-g0-Xr0" secondAttribute="leadingMargin" priority="750" constant="100" id="zTz-Kd-bA4"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="teamIntroduceLabel" destination="X8v-Fd-ahx" id="ASW-lC-INP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4t-G1-tjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297.5" y="408.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
