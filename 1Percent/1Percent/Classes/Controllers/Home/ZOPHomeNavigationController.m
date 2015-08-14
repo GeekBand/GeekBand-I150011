@@ -17,15 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 全局设置
-    [self.navigationBar setBarTintColor:[UIColor whiteColor]];
+    // 全局导航栏设置
+    UINavigationBar *bar = [UINavigationBar appearance];
+    // 255 184 189
+    UIColor *pinColor = [UIColor colorWithRed:255/255.0 green:184/255.0 blue:189/255.0 alpha:1.0];
+    NSDictionary *attributes = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:26],
+                                 NSForegroundColorAttributeName : pinColor};
+    [bar setTitleTextAttributes:attributes];
     
-    NSDictionary *attributes = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:25],
-                                 NSForegroundColorAttributeName : [UIColor purpleColor]};
-    
-    [self.navigationBar setTitleTextAttributes:attributes];
-    
-    
+    [bar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    bar.shadowImage = [[UIImage alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {

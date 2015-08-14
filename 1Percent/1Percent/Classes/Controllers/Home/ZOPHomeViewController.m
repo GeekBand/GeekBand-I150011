@@ -52,7 +52,7 @@
 /** 设置tableview属性 */
 - (void) setupTableView
 {
-    self.title = @"1 Percent";
+    self.title = @"1Percent";
     self.tableView.bounces = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.showsHorizontalScrollIndicator = NO;
