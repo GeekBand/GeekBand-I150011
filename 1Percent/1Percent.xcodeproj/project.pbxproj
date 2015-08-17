@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A24420A1B79C2B0003D8FDE /* ZOPSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2442091B79C2B0003D8FDE /* ZOPSideMenuController.m */; };
-		3A24420B1B7A3828003D8FDE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A71D7DF1B789CE70055C6B8 /* Home.storyboard */; };
 		3A24420C1B7A382D003D8FDE /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A71D7F71B789FB60055C6B8 /* Setting.storyboard */; };
 		3A24420D1B7A3834003D8FDE /* Introduce.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A71D7FA1B789FE70055C6B8 /* Introduce.storyboard */; };
 		3A2442101B7A6A84003D8FDE /* ZOPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24420F1B7A6A84003D8FDE /* ZOPMainViewController.m */; };
@@ -16,11 +15,12 @@
 		3A71D7C51B7897100055C6B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D7C31B7897100055C6B8 /* main.m */; };
 		3A71D7DB1B78971D0055C6B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D7C91B78971D0055C6B8 /* AppDelegate.m */; };
 		3A71D7DC1B78971D0055C6B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A71D7D51B78971D0055C6B8 /* Images.xcassets */; };
-		3A71D7F11B789EC80055C6B8 /* ZOPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D7ED1B789EC80055C6B8 /* ZOPHomeViewController.m */; };
 		3A71D7F21B789EC80055C6B8 /* ZOPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D7F01B789EC80055C6B8 /* ZOPSettingViewController.m */; };
 		3A71D7F61B789F380055C6B8 /* ZOPIntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D7F51B789F380055C6B8 /* ZOPIntroduceViewController.m */; };
-		3A71D7FF1B78A6150055C6B8 /* ZOPHomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D7FE1B78A6150055C6B8 /* ZOPHomeNavigationController.m */; };
 		3A71D8051B78E1070055C6B8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D8041B78E1070055C6B8 /* UIView+Frame.m */; };
+		3A8E1C6D1B81FEC0003886ED /* ZOPHomePageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E1C681B81FEC0003886ED /* ZOPHomePageTableViewCell.m */; };
+		3A8E1C6E1B81FEC0003886ED /* ZOPHomePageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E1C6A1B81FEC0003886ED /* ZOPHomePageTitleView.m */; };
+		3A8E1C6F1B81FEC0003886ED /* ZOPHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E1C6C1B81FEC0003886ED /* ZOPHomePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,19 +48,20 @@
 		3A71D7C91B78971D0055C6B8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3A71D7D51B78971D0055C6B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3A71D7DA1B78971D0055C6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A71D7E01B789CE70055C6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
-		3A71D7EC1B789EC80055C6B8 /* ZOPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPHomeViewController.h; sourceTree = "<group>"; };
-		3A71D7ED1B789EC80055C6B8 /* ZOPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPHomeViewController.m; sourceTree = "<group>"; };
 		3A71D7EF1B789EC80055C6B8 /* ZOPSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPSettingViewController.h; sourceTree = "<group>"; };
 		3A71D7F01B789EC80055C6B8 /* ZOPSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPSettingViewController.m; sourceTree = "<group>"; };
 		3A71D7F41B789F380055C6B8 /* ZOPIntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPIntroduceViewController.h; sourceTree = "<group>"; };
 		3A71D7F51B789F380055C6B8 /* ZOPIntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPIntroduceViewController.m; sourceTree = "<group>"; };
 		3A71D7F81B789FB60055C6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		3A71D7FB1B789FE70055C6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Introduce.storyboard; sourceTree = "<group>"; };
-		3A71D7FD1B78A6150055C6B8 /* ZOPHomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPHomeNavigationController.h; sourceTree = "<group>"; };
-		3A71D7FE1B78A6150055C6B8 /* ZOPHomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPHomeNavigationController.m; sourceTree = "<group>"; };
 		3A71D8031B78E1070055C6B8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		3A71D8041B78E1070055C6B8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3A8E1C671B81FEC0003886ED /* ZOPHomePageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPHomePageTableViewCell.h; sourceTree = "<group>"; };
+		3A8E1C681B81FEC0003886ED /* ZOPHomePageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPHomePageTableViewCell.m; sourceTree = "<group>"; };
+		3A8E1C691B81FEC0003886ED /* ZOPHomePageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPHomePageTitleView.h; sourceTree = "<group>"; };
+		3A8E1C6A1B81FEC0003886ED /* ZOPHomePageTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPHomePageTitleView.m; sourceTree = "<group>"; };
+		3A8E1C6B1B81FEC0003886ED /* ZOPHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPHomePageViewController.h; sourceTree = "<group>"; };
+		3A8E1C6C1B81FEC0003886ED /* ZOPHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPHomePageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				3A71D7D91B78971D0055C6B8 /* Main.storyboard */,
-				3A71D7DF1B789CE70055C6B8 /* Home.storyboard */,
 				3A71D7F71B789FB60055C6B8 /* Setting.storyboard */,
 				3A71D7FA1B789FE70055C6B8 /* Introduce.storyboard */,
 			);
@@ -280,10 +280,12 @@
 		3A71D7EB1B789EC80055C6B8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3A71D7EC1B789EC80055C6B8 /* ZOPHomeViewController.h */,
-				3A71D7ED1B789EC80055C6B8 /* ZOPHomeViewController.m */,
-				3A71D7FD1B78A6150055C6B8 /* ZOPHomeNavigationController.h */,
-				3A71D7FE1B78A6150055C6B8 /* ZOPHomeNavigationController.m */,
+				3A8E1C671B81FEC0003886ED /* ZOPHomePageTableViewCell.h */,
+				3A8E1C681B81FEC0003886ED /* ZOPHomePageTableViewCell.m */,
+				3A8E1C691B81FEC0003886ED /* ZOPHomePageTitleView.h */,
+				3A8E1C6A1B81FEC0003886ED /* ZOPHomePageTitleView.m */,
+				3A8E1C6B1B81FEC0003886ED /* ZOPHomePageViewController.h */,
+				3A8E1C6C1B81FEC0003886ED /* ZOPHomePageViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -414,7 +416,6 @@
 			files = (
 				3A24420D1B7A3834003D8FDE /* Introduce.storyboard in Resources */,
 				3A24420C1B7A382D003D8FDE /* Setting.storyboard in Resources */,
-				3A24420B1B7A3828003D8FDE /* Home.storyboard in Resources */,
 				3A71D7DC1B78971D0055C6B8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,13 +434,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8E1C6E1B81FEC0003886ED /* ZOPHomePageTitleView.m in Sources */,
 				3A71D8051B78E1070055C6B8 /* UIView+Frame.m in Sources */,
-				3A71D7FF1B78A6150055C6B8 /* ZOPHomeNavigationController.m in Sources */,
 				3A71D7F61B789F380055C6B8 /* ZOPIntroduceViewController.m in Sources */,
 				3A71D7DB1B78971D0055C6B8 /* AppDelegate.m in Sources */,
 				3A71D7C51B7897100055C6B8 /* main.m in Sources */,
 				3A24420A1B79C2B0003D8FDE /* ZOPSideMenuController.m in Sources */,
-				3A71D7F11B789EC80055C6B8 /* ZOPHomeViewController.m in Sources */,
+				3A8E1C6F1B81FEC0003886ED /* ZOPHomePageViewController.m in Sources */,
+				3A8E1C6D1B81FEC0003886ED /* ZOPHomePageTableViewCell.m in Sources */,
 				3A71D7F21B789EC80055C6B8 /* ZOPSettingViewController.m in Sources */,
 				3A2442101B7A6A84003D8FDE /* ZOPMainViewController.m in Sources */,
 			);
@@ -470,14 +472,6 @@
 				3A71D7DA1B78971D0055C6B8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A71D7DF1B789CE70055C6B8 /* Home.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A71D7E01B789CE70055C6B8 /* Base */,
-			);
-			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		3A71D7F71B789FB60055C6B8 /* Setting.storyboard */ = {

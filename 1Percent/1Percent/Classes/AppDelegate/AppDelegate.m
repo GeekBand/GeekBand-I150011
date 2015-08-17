@@ -8,9 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ZOPMainViewController.h"
-#import "ZOPHomeNavigationController.h"
 #import "ZOPSettingViewController.h"
 #import "ZOPIntroduceViewController.h"
+#import "ZOPHomePageViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +21,8 @@
 - (void) loadMainViewController
 {
     // Home
-    UIStoryboard *homeSb = [UIStoryboard storyboardWithName:@"Home" bundle:[NSBundle mainBundle]];
-    ZOPHomeNavigationController *homeNavC = homeSb.instantiateInitialViewController;
+    ZOPHomePageViewController *homeVC = [[ZOPHomePageViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeVC];
     
     // left
     UIStoryboard *settingSb = [UIStoryboard storyboardWithName:@"Setting" bundle:[NSBundle mainBundle]];
@@ -34,7 +34,7 @@
     
     // menu
     ZOPMainViewController *mainViewController =
-    [ZOPMainViewController sideMenuControllerWithHomeVC:homeNavC
+    [ZOPMainViewController sideMenuControllerWithHomeVC:nav
                                                  leftVC:settingVC
                                                 rightVC:introduceVC
                                             animateType:ZOPSideMenuAnimateTypeZoom];
