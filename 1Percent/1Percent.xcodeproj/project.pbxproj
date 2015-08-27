@@ -18,6 +18,15 @@
 		3A71D7F21B789EC80055C6B8 /* ZOPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D7F01B789EC80055C6B8 /* ZOPSettingViewController.m */; };
 		3A71D7F61B789F380055C6B8 /* ZOPIntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D7F51B789F380055C6B8 /* ZOPIntroduceViewController.m */; };
 		3A71D8051B78E1070055C6B8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71D8041B78E1070055C6B8 /* UIView+Frame.m */; };
+		3A8C8DBD1B8F92DF00609C41 /* ZOPProductBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C8DBC1B8F92DF00609C41 /* ZOPProductBLL.m */; };
+		3A8C8DC51B8F92F300609C41 /* ModelParserKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C8DC01B8F92F300609C41 /* ModelParserKey.m */; };
+		3A8C8DC61B8F92F300609C41 /* ZOPProductDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C8DC21B8F92F300609C41 /* ZOPProductDetailModel.m */; };
+		3A8C8DC71B8F92F300609C41 /* ZOPProductIntroductionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C8DC41B8F92F300609C41 /* ZOPProductIntroductionModel.m */; };
+		3A8C8DCB1B8F930C00609C41 /* OSSServiceDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C8DCA1B8F930C00609C41 /* OSSServiceDataParser.m */; };
+		3A8C8DD31B8F931800609C41 /* OSSServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C8DCE1B8F931800609C41 /* OSSServiceRequest.m */; };
+		3A8C8DD41B8F931800609C41 /* OSSServiceRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C8DD01B8F931800609C41 /* OSSServiceRequestManager.m */; };
+		3A8C8DD51B8F931800609C41 /* ZOPGETDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C8DD21B8F931800609C41 /* ZOPGETDataRequest.m */; };
+		3A8C8DD71B8F93EB00609C41 /* ALBB_OSS_IOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8C8DD61B8F93EB00609C41 /* ALBB_OSS_IOS_SDK.framework */; };
 		3A8E1C6D1B81FEC0003886ED /* ZOPHomePageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E1C681B81FEC0003886ED /* ZOPHomePageTableViewCell.m */; };
 		3A8E1C6E1B81FEC0003886ED /* ZOPHomePageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E1C6A1B81FEC0003886ED /* ZOPHomePageTitleView.m */; };
 		3A8E1C6F1B81FEC0003886ED /* ZOPHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E1C6C1B81FEC0003886ED /* ZOPHomePageViewController.m */; };
@@ -56,6 +65,23 @@
 		3A71D7FB1B789FE70055C6B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Introduce.storyboard; sourceTree = "<group>"; };
 		3A71D8031B78E1070055C6B8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		3A71D8041B78E1070055C6B8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3A8C8DBB1B8F92DF00609C41 /* ZOPProductBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPProductBLL.h; sourceTree = "<group>"; };
+		3A8C8DBC1B8F92DF00609C41 /* ZOPProductBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPProductBLL.m; sourceTree = "<group>"; };
+		3A8C8DBF1B8F92F300609C41 /* ModelParserKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelParserKey.h; sourceTree = "<group>"; };
+		3A8C8DC01B8F92F300609C41 /* ModelParserKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelParserKey.m; sourceTree = "<group>"; };
+		3A8C8DC11B8F92F300609C41 /* ZOPProductDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPProductDetailModel.h; sourceTree = "<group>"; };
+		3A8C8DC21B8F92F300609C41 /* ZOPProductDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPProductDetailModel.m; sourceTree = "<group>"; };
+		3A8C8DC31B8F92F300609C41 /* ZOPProductIntroductionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPProductIntroductionModel.h; sourceTree = "<group>"; };
+		3A8C8DC41B8F92F300609C41 /* ZOPProductIntroductionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPProductIntroductionModel.m; sourceTree = "<group>"; };
+		3A8C8DC91B8F930C00609C41 /* OSSServiceDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSServiceDataParser.h; sourceTree = "<group>"; };
+		3A8C8DCA1B8F930C00609C41 /* OSSServiceDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSServiceDataParser.m; sourceTree = "<group>"; };
+		3A8C8DCD1B8F931800609C41 /* OSSServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSServiceRequest.h; sourceTree = "<group>"; };
+		3A8C8DCE1B8F931800609C41 /* OSSServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSServiceRequest.m; sourceTree = "<group>"; };
+		3A8C8DCF1B8F931800609C41 /* OSSServiceRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSServiceRequestManager.h; sourceTree = "<group>"; };
+		3A8C8DD01B8F931800609C41 /* OSSServiceRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSServiceRequestManager.m; sourceTree = "<group>"; };
+		3A8C8DD11B8F931800609C41 /* ZOPGETDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPGETDataRequest.h; sourceTree = "<group>"; };
+		3A8C8DD21B8F931800609C41 /* ZOPGETDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPGETDataRequest.m; sourceTree = "<group>"; };
+		3A8C8DD61B8F93EB00609C41 /* ALBB_OSS_IOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALBB_OSS_IOS_SDK.framework; sourceTree = "<group>"; };
 		3A8E1C671B81FEC0003886ED /* ZOPHomePageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPHomePageTableViewCell.h; sourceTree = "<group>"; };
 		3A8E1C681B81FEC0003886ED /* ZOPHomePageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPHomePageTableViewCell.m; sourceTree = "<group>"; };
 		3A8E1C691B81FEC0003886ED /* ZOPHomePageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPHomePageTitleView.h; sourceTree = "<group>"; };
@@ -69,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8C8DD71B8F93EB00609C41 /* ALBB_OSS_IOS_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,13 +116,6 @@
 				3A2442091B79C2B0003D8FDE /* ZOPSideMenuController.m */,
 			);
 			path = SideMenuController;
-			sourceTree = "<group>";
-		};
-		3A2442111B7A8092003D8FDE /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		3A71D7901B7894A50055C6B8 = {
@@ -129,6 +149,7 @@
 		3A71D79C1B7894A50055C6B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A8C8DD61B8F93EB00609C41 /* ALBB_OSS_IOS_SDK.framework */,
 				3A71D7C21B7897100055C6B8 /* Info.plist */,
 				3A71D7C31B7897100055C6B8 /* main.m */,
 			);
@@ -159,12 +180,12 @@
 				3A71D7C71B78971D0055C6B8 /* AppDelegate */,
 				3A71D7CA1B78971D0055C6B8 /* Controllers */,
 				3A71D7CC1B78971D0055C6B8 /* Global */,
-				3A71D7CD1B78971D0055C6B8 /* Models */,
-				3A71D7CE1B78971D0055C6B8 /* Parsers */,
+				3A8C8DBA1B8F92DF00609C41 /* BusinessLogicLayer */,
+				3A8C8DBE1B8F92F300609C41 /* Models */,
+				3A8C8DC81B8F930C00609C41 /* Parsers */,
+				3A8C8DCC1B8F931800609C41 /* Requests */,
 				3A71D7CF1B78971D0055C6B8 /* Publics */,
-				3A71D7D01B78971D0055C6B8 /* Requests */,
 				3A71D7D11B78971D0055C6B8 /* Utilities */,
-				3A71D7D21B78971D0055C6B8 /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -205,20 +226,6 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-		3A71D7CD1B78971D0055C6B8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3A71D7CE1B78971D0055C6B8 /* Parsers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Parsers;
-			sourceTree = "<group>";
-		};
 		3A71D7CF1B78971D0055C6B8 /* Publics */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,27 +234,12 @@
 			path = Publics;
 			sourceTree = "<group>";
 		};
-		3A71D7D01B78971D0055C6B8 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
 		3A71D7D11B78971D0055C6B8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				3A71D8001B78E0D00055C6B8 /* Category */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		3A71D7D21B78971D0055C6B8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3A2442111B7A8092003D8FDE /* Home */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		3A71D7D31B78971D0055C6B8 /* Resources */ = {
@@ -331,6 +323,50 @@
 				3A71D8041B78E1070055C6B8 /* UIView+Frame.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		3A8C8DBA1B8F92DF00609C41 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C8DBB1B8F92DF00609C41 /* ZOPProductBLL.h */,
+				3A8C8DBC1B8F92DF00609C41 /* ZOPProductBLL.m */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		3A8C8DBE1B8F92F300609C41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C8DBF1B8F92F300609C41 /* ModelParserKey.h */,
+				3A8C8DC01B8F92F300609C41 /* ModelParserKey.m */,
+				3A8C8DC11B8F92F300609C41 /* ZOPProductDetailModel.h */,
+				3A8C8DC21B8F92F300609C41 /* ZOPProductDetailModel.m */,
+				3A8C8DC31B8F92F300609C41 /* ZOPProductIntroductionModel.h */,
+				3A8C8DC41B8F92F300609C41 /* ZOPProductIntroductionModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A8C8DC81B8F930C00609C41 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C8DC91B8F930C00609C41 /* OSSServiceDataParser.h */,
+				3A8C8DCA1B8F930C00609C41 /* OSSServiceDataParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		3A8C8DCC1B8F931800609C41 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C8DCD1B8F931800609C41 /* OSSServiceRequest.h */,
+				3A8C8DCE1B8F931800609C41 /* OSSServiceRequest.m */,
+				3A8C8DCF1B8F931800609C41 /* OSSServiceRequestManager.h */,
+				3A8C8DD01B8F931800609C41 /* OSSServiceRequestManager.m */,
+				3A8C8DD11B8F931800609C41 /* ZOPGETDataRequest.h */,
+				3A8C8DD21B8F931800609C41 /* ZOPGETDataRequest.m */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,15 +470,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8C8DC61B8F92F300609C41 /* ZOPProductDetailModel.m in Sources */,
+				3A8C8DBD1B8F92DF00609C41 /* ZOPProductBLL.m in Sources */,
+				3A8C8DCB1B8F930C00609C41 /* OSSServiceDataParser.m in Sources */,
 				3A8E1C6E1B81FEC0003886ED /* ZOPHomePageTitleView.m in Sources */,
+				3A8C8DC71B8F92F300609C41 /* ZOPProductIntroductionModel.m in Sources */,
 				3A71D8051B78E1070055C6B8 /* UIView+Frame.m in Sources */,
 				3A71D7F61B789F380055C6B8 /* ZOPIntroduceViewController.m in Sources */,
 				3A71D7DB1B78971D0055C6B8 /* AppDelegate.m in Sources */,
 				3A71D7C51B7897100055C6B8 /* main.m in Sources */,
 				3A24420A1B79C2B0003D8FDE /* ZOPSideMenuController.m in Sources */,
+				3A8C8DD51B8F931800609C41 /* ZOPGETDataRequest.m in Sources */,
 				3A8E1C6F1B81FEC0003886ED /* ZOPHomePageViewController.m in Sources */,
 				3A8E1C6D1B81FEC0003886ED /* ZOPHomePageTableViewCell.m in Sources */,
 				3A71D7F21B789EC80055C6B8 /* ZOPSettingViewController.m in Sources */,
+				3A8C8DD31B8F931800609C41 /* OSSServiceRequest.m in Sources */,
+				3A8C8DC51B8F92F300609C41 /* ModelParserKey.m in Sources */,
+				3A8C8DD41B8F931800609C41 /* OSSServiceRequestManager.m in Sources */,
 				3A2442101B7A6A84003D8FDE /* ZOPMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +622,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/1Percent/SupportingFiles",
+				);
 				INFOPLIST_FILE = 1Percent/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -590,6 +638,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/1Percent/SupportingFiles",
+				);
 				INFOPLIST_FILE = 1Percent/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
