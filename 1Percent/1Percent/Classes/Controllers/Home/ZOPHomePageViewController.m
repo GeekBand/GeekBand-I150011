@@ -7,14 +7,17 @@
 //
 
 #import "ZOPHomePageViewController.h"
+#import "ZOPProductBLL.h"
 
 // 建立静态变量
 static ZOPHomePageViewController * shared = nil;
 
 @interface ZOPHomePageViewController ()
+/** 推荐产品的数组 */
+@property (nonatomic, copy) NSArray *products;
 
-@property (nonatomic, strong) NSArray * dataArray;
-
+/** 产品展示tableView */
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation ZOPHomePageViewController
@@ -80,11 +83,23 @@ static ZOPHomePageViewController * shared = nil;
     tableView.delegate = self;
     tableView.dataSource = self;
     [self.view addSubview:tableView];
+    self.tableView = tableView;
     
-    
-    
-    self.dataArray = @[@"1.jpg", @"2.jpg", @"3.jpg", @"4.jpg", @"5.jpg", @"6.jpg"];
-    
+    // 从服务器获取数据
+    __weak typeof(self) weakSelf = self;
+    [ZOPProductBLL getProductListWithYear_Month:@"1508" finished:^(NSArray *products, NSError *error)
+    {
+        if (error == nil) {
+            weakSelf.products = products;
+            
+            [weakSelf.tableView reloadData];
+        }
+        else
+        {
+            NSLog(@"获取产品数据出错");
+        }
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,16 +109,24 @@ static ZOPHomePageViewController * shared = nil;
 #pragma mark - 表格方法
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return self.products.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString * cellIdentifier = @"Cell";
     ZOPHomePageTableViewCell * cell = (ZOPHomePageTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    if ([self.dataArray count] > indexPath.row) {
+    if ([self.products count] > indexPath.row) {
         
         cell.cellImageView.frame = CGRectMake(0,0,self.view.bounds.size.width,cell.bounds.size.height - 5);
-        cell.cellImageView.image = [UIImage imageNamed:self.dataArray[indexPath.row]];
+        
+        ZOPProductIntroductionModel *product = self.products[indexPath.row];
+        NSString *imageURL = product.productImageURL;
+        
+        [ZOPProductBLL getImageWithProductImageURL:imageURL finished:^(UIImage *image, NSError *error) {
+            cell.cellImageView.image = image;
+        }];
+        
+        
     }
     return cell;
 }
